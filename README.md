@@ -2,7 +2,7 @@
 
 **A Power BI case study:** end-to-end analysis of a 1,649-respondent sales-force survey — from messy raw Excel exports to a 4-page interactive report with year-over-year trending, peer benchmarking, and demographic breakouts.
 
-> 📊 Built with: Power BI Desktop · Power Query (M) · DAX · Excel (initial cleaning)
+
 
 ---
 
@@ -116,7 +116,6 @@ Total Respondents = DISTINCTCOUNT(Fact_Sentiment_Long[Unique Identifier])
 | **3. Manager vs. Rep & TA Breakdown** | Grouped bar comparing manager/rep sentiment by theme, plus a color-scaled matrix of every therapeutic area × theme combination |
 | **4. Trend & Peer Benchmark** | 2024 vs. peer-industry comparison, and a 4-year (2022/2023/Peer/2024) trend view per theme |
 
-*(Add your own screenshots here — drag 3–4 PNGs into a `/screenshots` folder and reference them, e.g. `![Page 1](screenshots/page1-demographics.png)`)*
 
 ---
 
@@ -142,9 +141,3 @@ Total Respondents = DISTINCTCOUNT(Fact_Sentiment_Long[Unique Identifier])
 - `Final_document.pbix` — the full Power BI file (data model, all DAX measures, 4 report pages)
 - `screenshots/` — page-by-page images for anyone without Power BI Desktop installed
 - `README.md` — this document
-
-## Possible next steps
-
-- Row-Level Security by therapeutic area, so a TA-specific manager could be given a filtered view of only their own data
-- Full manual coding of open-text verbatims (current categorization is a keyword-based first pass, not a rigorous qualitative read-through)
-- Publish to Power BI Service for a live, clickable version alongside these static screenshots
